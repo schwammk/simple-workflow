@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+   <generic>
+      <author type="java.lang.String">dschwammkrug</author>
+      <name type="java.lang.String">E2ESimpleWorkflow</name>
+      <description type="java.lang.String"/>
+      <repository type="java.io.File">repository</repository>
+      <wsdl.import.max.nesting.level type="java.lang.Integer">8</wsdl.import.max.nesting.level>
+   </generic>
+   <tracer>
+      <file_import type="java.io.File">repository/StepOneWorker/StepOneWorker.rep</file_import>
+      <useCustomHost type="java.lang.Boolean">false</useCustomHost>
+      <url_import type="java.lang.String">file:/C:/E2EProjects/Experiments/E2ESimpleWorkflow/repository/StepOneWorker/StepOneWorker.rep</url_import>
+   </tracer>
+   <compiler>
+      <uml type="java.io.File">uml</uml>
+      <plugin.magicdraw.lastproject type="java.io.File">uml/SimpleWorkflow.xml</plugin.magicdraw.lastproject>
+      <optimize.java.script type="java.lang.Boolean">false</optimize.java.script>
+   </compiler>
+</project>

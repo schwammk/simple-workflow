@@ -1,0 +1,10 @@
+.$*
+*.bak
+*.tgz
+*.breakpoints
+resources/
+build/
+testcase/
+regressiontest/
+repository/
+
