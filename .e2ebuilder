@@ -2,7 +2,7 @@
 <project>
    <generic>
       <author type="java.lang.String">dschwammkrug</author>
-      <name type="java.lang.String">E2ESimpleWorkflow</name>
+      <name type="java.lang.String">simple-workflow</name>
       <description type="java.lang.String"/>
       <repository type="java.io.File">repository</repository>
       <wsdl.import.max.nesting.level type="java.lang.Integer">8</wsdl.import.max.nesting.level>
@@ -14,7 +14,7 @@
    </tracer>
    <compiler>
       <uml type="java.io.File">uml</uml>
-      <plugin.magicdraw.lastproject type="java.io.File">uml/SimpleWorkflow.xml</plugin.magicdraw.lastproject>
+      <plugin.magicdraw.lastproject type="java.io.File">uml/StepOneWorker.xml</plugin.magicdraw.lastproject>
       <optimize.java.script type="java.lang.Boolean">false</optimize.java.script>
    </compiler>
 </project>

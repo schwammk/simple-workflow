@@ -1,0 +1,36 @@
+{
+    "channels": {
+        "access": {
+            "sinks": {
+                "default": {
+                    "type": "std_out",
+                    "formatter": {
+                        "type": "json"
+                    },
+                    "filters": [
+                        {
+                            "trx_level": ["Custom"],
+                            "domains": ["*"]
+                        }
+                    ]
+                }
+            }
+        },
+        "error": {
+            "sinks": {
+                "default": {
+                    "type": "std_err",
+                    "formatter": {
+                        "type": "json"
+                    },
+                    "filters": [
+                        {
+                            "level": ["Info"],
+                            "domains": ["*"]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
