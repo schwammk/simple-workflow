@@ -12,20 +12,20 @@ pipeline {
         }
         stage('SimpleWokflow') {
             steps {
-                docker build --build-arg SERVICE=SimpleWorkflow --build-arg PORT=24411 -t ${CLOUD_REPO}/simple-workflow:${VERSION} .
-                docker push ${CLOUD_REPO}/simple-workflow:${VERSION}
+                sh "docker build --build-arg SERVICE=SimpleWorkflow --build-arg PORT=24411 -t ${CLOUD_REPO}/simple-workflow:${VERSION} ."
+                sh "docker push ${CLOUD_REPO}/simple-workflow:${VERSION}"
             }
         }
         stage('StepOneWorker') {
             steps {
-                docker build --build-arg SERVICE=StepOneWorker --build-arg PORT=24422 -t ${CLOUD_REPO}/step-one-worker:${VERSION} .
-                docker push ${CLOUD_REPO}/step-one-worker:${VERSION}
+                sh "docker build --build-arg SERVICE=StepOneWorker --build-arg PORT=24422 -t ${CLOUD_REPO}/step-one-worker:${VERSION} ."
+                sh "docker push ${CLOUD_REPO}/step-one-worker:${VERSION}"
             }
         }
         stage('StepTwoWorker') {
             steps {
-                docker build --build-arg SERVICE=StepTwoWorker --build-arg PORT=24433 -t ${CLOUD_REPO}/step-two-worker:${VERSION} .
-                docker push ${CLOUD_REPO}/step-two-worker:${VERSION}
+                sh "docker build --build-arg SERVICE=StepTwoWorker --build-arg PORT=24433 -t ${CLOUD_REPO}/step-two-worker:${VERSION} ."
+                sh "docker push ${CLOUD_REPO}/step-two-worker:${VERSION}"
             }
         }
     }
