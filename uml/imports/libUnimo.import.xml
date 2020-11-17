@@ -51,6 +51,7 @@
                        xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                        xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                        xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                       xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                        name="libUnimo"
                        visibility="public"
                        xmi:id="libUnimo_Package_675208596"
@@ -822,13 +823,244 @@
          </packagedElement>
          <packagedElement name="UnimoLibrary" visibility="public" xmi:id="libUnimo_Package_595381502"
                           xmi:type="uml:Package">
+            <packagedElement name="LoggerConfig" visibility="public" xmi:id="libUnimo_Package_1397005237"
+                             xmi:type="uml:Package">
+               <packagedElement isAbstract="false" name="Exception" visibility="public"
+                                xmi:id="libUnimo_Class_-37873295"
+                                xmi:type="uml:Class">
+                  <ownedComment body="" xmi:id="libUnimo_Comment_-37873295" xmi:type="uml:Comment">
+                     <annotatedElement xmi:idref="libUnimo_Class_-37873295"/>
+                  </ownedComment>
+                  <nestedClassifier isAbstract="false" name="ExceptionSink" visibility="public"
+                                    xmi:id="libUnimo_Class_1654659473"
+                                    xmi:type="uml:Class">
+                     <ownedComment body="" xmi:id="libUnimo_Comment_1654659473" xmi:type="uml:Comment">
+                        <annotatedElement xmi:idref="libUnimo_Class_1654659473"/>
+                     </ownedComment>
+                     <nestedClassifier isAbstract="false" name="Formatter" visibility="public"
+                                       xmi:id="libUnimo_Class_-26088903"
+                                       xmi:type="uml:Class">
+                        <ownedComment body="" xmi:id="libUnimo_Comment_-26088903" xmi:type="uml:Comment">
+                           <annotatedElement xmi:idref="libUnimo_Class_-26088903"/>
+                        </ownedComment>
+                        <nestedClassifier isAbstract="false" name="Keys" visibility="public"
+                                          xmi:id="libUnimo_Class_1119078349"
+                                          xmi:type="uml:Class">
+                           <ownedComment body="" xmi:id="libUnimo_Comment_1119078349" xmi:type="uml:Comment">
+                              <annotatedElement xmi:idref="libUnimo_Class_1119078349"/>
+                           </ownedComment>
+                           <ownedAttribute name="at" visibility="public" xmi:id="libUnimo_Property_1692472512"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_1692472512" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_1692472512"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="channel" visibility="public" xmi:id="libUnimo_Property_1126876310"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_1126876310" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_1126876310"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="message" visibility="public" xmi:id="libUnimo_Property_1342850970"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_1342850970" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_1342850970"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="details" visibility="public" xmi:id="libUnimo_Property_1945647573"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_1945647573" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_1945647573"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                        </nestedClassifier>
+                     </nestedClassifier>
+                  </nestedClassifier>
+               </packagedElement>
+               <packagedElement isAbstract="false" name="TransferError" visibility="public"
+                                xmi:id="libUnimo_Class_-880325377"
+                                xmi:type="uml:Class">
+                  <ownedComment body="" xmi:id="libUnimo_Comment_-880325377" xmi:type="uml:Comment">
+                     <annotatedElement xmi:idref="libUnimo_Class_-880325377"/>
+                  </ownedComment>
+                  <nestedClassifier isAbstract="false" name="TransferErrorSink" visibility="public"
+                                    xmi:id="libUnimo_Class_999600593"
+                                    xmi:type="uml:Class">
+                     <ownedComment body="" xmi:id="libUnimo_Comment_999600593" xmi:type="uml:Comment">
+                        <annotatedElement xmi:idref="libUnimo_Class_999600593"/>
+                     </ownedComment>
+                     <nestedClassifier isAbstract="false" name="Formatter" visibility="public"
+                                       xmi:id="libUnimo_Class_-1518036487"
+                                       xmi:type="uml:Class">
+                        <ownedComment body="" xmi:id="libUnimo_Comment_-1518036487" xmi:type="uml:Comment">
+                           <annotatedElement xmi:idref="libUnimo_Class_-1518036487"/>
+                        </ownedComment>
+                        <nestedClassifier isAbstract="false" name="Keys" visibility="public"
+                                          xmi:id="libUnimo_Class_-1117218931"
+                                          xmi:type="uml:Class">
+                           <ownedComment body="" xmi:id="libUnimo_Comment_-1117218931" xmi:type="uml:Comment">
+                              <annotatedElement xmi:idref="libUnimo_Class_-1117218931"/>
+                           </ownedComment>
+                           <ownedAttribute name="at" visibility="public" xmi:id="libUnimo_Property_94434432"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_94434432" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_94434432"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="channel" visibility="public" xmi:id="libUnimo_Property_304135382"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_304135382" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_304135382"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="message" visibility="public" xmi:id="libUnimo_Property_520110042"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_520110042" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_520110042"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="details" visibility="public" xmi:id="libUnimo_Property_1122906645"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_1122906645" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_1122906645"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                        </nestedClassifier>
+                     </nestedClassifier>
+                  </nestedClassifier>
+               </packagedElement>
+               <packagedElement isAbstract="false" name="Transfer" visibility="public"
+                                xmi:id="libUnimo_Class_-984890743"
+                                xmi:type="uml:Class">
+                  <ownedComment body="" xmi:id="libUnimo_Comment_-984890743" xmi:type="uml:Comment">
+                     <annotatedElement xmi:idref="libUnimo_Class_-984890743"/>
+                  </ownedComment>
+                  <nestedClassifier isAbstract="false" name="TransferSink" visibility="public"
+                                    xmi:id="libUnimo_Class_-1512133049"
+                                    xmi:type="uml:Class">
+                     <ownedComment body="" xmi:id="libUnimo_Comment_-1512133049" xmi:type="uml:Comment">
+                        <annotatedElement xmi:idref="libUnimo_Class_-1512133049"/>
+                     </ownedComment>
+                     <nestedClassifier isAbstract="false" name="Formatter" visibility="public"
+                                       xmi:id="libUnimo_Class_-1567604157"
+                                       xmi:type="uml:Class">
+                        <ownedComment body="" xmi:id="libUnimo_Comment_-1567604157" xmi:type="uml:Comment">
+                           <annotatedElement xmi:idref="libUnimo_Class_-1567604157"/>
+                        </ownedComment>
+                        <nestedClassifier isAbstract="false" name="Keys" visibility="public"
+                                          xmi:id="libUnimo_Class_-2139944233"
+                                          xmi:type="uml:Class">
+                           <ownedComment body="" xmi:id="libUnimo_Comment_-2139944233" xmi:type="uml:Comment">
+                              <annotatedElement xmi:idref="libUnimo_Class_-2139944233"/>
+                           </ownedComment>
+                           <ownedAttribute name="at" visibility="public" xmi:id="libUnimo_Property_802929994"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_802929994" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_802929994"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="channel" visibility="public" xmi:id="libUnimo_Property_-568991156"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_-568991156" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_-568991156"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="message" visibility="public" xmi:id="libUnimo_Property_-353016496"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_-353016496" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_-353016496"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                           <ownedAttribute name="details" visibility="public" xmi:id="libUnimo_Property_249780107"
+                                           xmi:type="uml:Property">
+                              <ownedComment body="" xmi:id="libUnimo_Comment_249780107" xmi:type="uml:Comment">
+                                 <annotatedElement xmi:idref="libUnimo_Property_249780107"/>
+                              </ownedComment>
+                              <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
+                                    xmi:type="uml:Class">
+                                 <xmi:Extension extender="MagicDraw UML 18.0">
+                                    <referenceExtension referentPath="Base Types::String" referentType="Class"/>
+                                 </xmi:Extension>
+                              </type>
+                           </ownedAttribute>
+                        </nestedClassifier>
+                     </nestedClassifier>
+                  </nestedClassifier>
+               </packagedElement>
+            </packagedElement>
             <packagedElement isAbstract="false" name="ExceptionLog" visibility="public"
                              xmi:id="libUnimo_Class_-2129270984"
                              xmi:type="uml:Class">
                <ownedComment body="" xmi:id="libUnimo_Comment_-2129270984" xmi:type="uml:Comment">
                   <annotatedElement xmi:idref="libUnimo_Class_-2129270984"/>
                </ownedComment>
-               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163807"
+               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163809"
                                xmi:type="uml:Generalization"/>
                <ownedOperation name="withCorrelationId" visibility="public"
                                xmi:id="libUnimo_Operation_-175155827"
@@ -837,10 +1069,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-175155827"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="correlationId" visibility="public"
-                                  xmi:id="libUnimo_Parameter_-764983744"
+                                  xmi:id="libUnimo_Parameter_-764983743"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_-764983747" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983744"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983743"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -851,10 +1083,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_-2129270984"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107334"
+                                  xmi:id="libUnimo_Parameter_107337"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107332" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107334"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107337"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -870,10 +1102,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_1842545795"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106084"
+                                  xmi:id="libUnimo_Parameter_106082"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106079" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106084"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106082"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -883,10 +1115,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972726"
+                                  xmi:id="libUnimo_Parameter_111972724"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972721" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972726"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972724"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -897,10 +1129,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_-2129270984"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107335"
+                                  xmi:id="libUnimo_Parameter_107338"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107333" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107335"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107338"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -911,10 +1143,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-1597142199"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="error" visibility="public"
-                                  xmi:id="libUnimo_Parameter_96784907"
+                                  xmi:id="libUnimo_Parameter_96784905"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_96784904" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_96784907"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_96784905"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#_9_5_1_be002f9_1137677887489_628032_1"
                            xmi:type="uml:Class">
@@ -926,10 +1158,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="errorLog" type="libUnimo_Class_-2129270984"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_1396096028"
+                                  xmi:id="libUnimo_Parameter_1396096029"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_1396096028" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_1396096028"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_1396096029"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -940,10 +1172,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_67697005"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="error" visibility="public"
-                                  xmi:id="libUnimo_Parameter_96784908"
+                                  xmi:id="libUnimo_Parameter_96784906"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_96784905" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_96784908"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_96784906"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#_9_5_1_be002f9_1137677887489_628032_1"
                            xmi:type="uml:Class">
@@ -1003,7 +1235,7 @@
                <ownedComment body="" xmi:id="libUnimo_Comment_-9214242" xmi:type="uml:Comment">
                   <annotatedElement xmi:idref="libUnimo_Class_-9214242"/>
                </ownedComment>
-               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163809"
+               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163810"
                                xmi:type="uml:Generalization"/>
                <ownedOperation isStatic="true" name="createLog" visibility="public"
                                xmi:id="libUnimo_Operation_383519093"
@@ -1034,10 +1266,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-1833602519"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106079"
+                                  xmi:id="libUnimo_Parameter_106080"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106080" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106079"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106080"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1047,10 +1279,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972721"
+                                  xmi:id="libUnimo_Parameter_111972722"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972722" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972721"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972722"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1061,10 +1293,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_-9214242"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107332"
+                                  xmi:id="libUnimo_Parameter_107335"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107334" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107332"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107335"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -1075,10 +1307,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_882296231"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="correlationId" visibility="public"
-                                  xmi:id="libUnimo_Parameter_-764983747"
+                                  xmi:id="libUnimo_Parameter_-764983746"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_-764983746" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983747"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983746"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1089,10 +1321,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_-9214242"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107333"
+                                  xmi:id="libUnimo_Parameter_107336"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107335" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107333"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107336"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -1500,10 +1732,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-129108006"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="correlationId" visibility="public"
-                                  xmi:id="libUnimo_Parameter_-764983746"
+                                  xmi:id="libUnimo_Parameter_-764983745"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_-764983745" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983746"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983745"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1556,10 +1788,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_1726807650"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="correlationId" visibility="public"
-                                  xmi:id="libUnimo_Parameter_-764983745"
+                                  xmi:id="libUnimo_Parameter_-764983744"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_-764983744" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983745"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983744"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1611,10 +1843,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-1626978804"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106080"
+                                  xmi:id="libUnimo_Parameter_106081"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106081" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106080"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106081"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1624,10 +1856,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972722"
+                                  xmi:id="libUnimo_Parameter_111972723"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972723" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972722"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972723"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1667,7 +1899,7 @@
                <ownedComment body="" xmi:id="libUnimo_Comment_1108781232" xmi:type="uml:Comment">
                   <annotatedElement xmi:idref="libUnimo_Class_1108781232"/>
                </ownedComment>
-               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163810"
+               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163811"
                                xmi:type="uml:Generalization"/>
                <ownedOperation name="withCorrelationId" visibility="public"
                                xmi:id="libUnimo_Operation_-1151557867"
@@ -1676,10 +1908,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-1151557867"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="correlationId" visibility="public"
-                                  xmi:id="libUnimo_Parameter_-764983743"
+                                  xmi:id="libUnimo_Parameter_-764983747"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_-764983743" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983743"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_-764983747"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1690,10 +1922,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_1108781232"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107336"
+                                  xmi:id="libUnimo_Parameter_107332"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107336" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107336"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107332"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -1709,10 +1941,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_-1887117829"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106085"
+                                  xmi:id="libUnimo_Parameter_106079"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106082" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106085"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106079"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1722,10 +1954,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972727"
+                                  xmi:id="libUnimo_Parameter_111972721"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972724" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972727"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972721"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -1736,10 +1968,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_1108781232"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107337"
+                                  xmi:id="libUnimo_Parameter_107333"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107337" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107337"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107333"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -1803,10 +2035,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="errorLog" type="libUnimo_Class_1108781232"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_1396096029"
+                                  xmi:id="libUnimo_Parameter_1396096028"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_1396096029" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_1396096029"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_1396096028"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -1831,10 +2063,10 @@
                   </ownedParameter>
                   <ownedParameter direction="return" name="log" type="libUnimo_Class_1108781232"
                                   visibility="public"
-                                  xmi:id="libUnimo_Parameter_107338"
+                                  xmi:id="libUnimo_Parameter_107334"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_107338" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_107338"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_107334"/>
                      </ownedComment>
                   </ownedParameter>
                </ownedOperation>
@@ -1845,7 +2077,7 @@
                <ownedComment body="" xmi:id="libUnimo_Comment_1425816024" xmi:type="uml:Comment">
                   <annotatedElement xmi:idref="libUnimo_Class_1425816024"/>
                </ownedComment>
-               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163811"
+               <generalization general="libUnimo_Class_331163807" xmi:id="libUnimo_Generalization_331163807"
                                xmi:type="uml:Generalization"/>
                <ownedOperation name="withInstanceEntityId: String" visibility="public"
                                xmi:id="libUnimo_Operation_1063693922"
@@ -1990,10 +2222,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="error" visibility="public"
-                                  xmi:id="libUnimo_Parameter_96784905"
+                                  xmi:id="libUnimo_Parameter_96784907"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_96784907" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_96784905"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_96784907"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#_9_5_1_be002f9_1137677887489_628032_1"
                            xmi:type="uml:Class">
@@ -2248,10 +2480,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_2118377054"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106081"
+                                  xmi:id="libUnimo_Parameter_106083"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106083" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106081"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106083"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -2261,10 +2493,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972723"
+                                  xmi:id="libUnimo_Parameter_111972725"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972725" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972723"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972725"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/Float"
                            xmi:type="uml:Class">
@@ -2289,10 +2521,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_1918188622"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106082"
+                                  xmi:id="libUnimo_Parameter_106084"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106084" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106082"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106084"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -2302,10 +2534,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972724"
+                                  xmi:id="libUnimo_Parameter_111972726"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972726" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972724"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972726"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/DateTime"
                            xmi:type="uml:Class">
@@ -2330,10 +2562,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_1627974283"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="key" visibility="public"
-                                  xmi:id="libUnimo_Parameter_106083"
+                                  xmi:id="libUnimo_Parameter_106085"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_106085" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_106083"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_106085"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -2343,10 +2575,10 @@
                      </type>
                   </ownedParameter>
                   <ownedParameter direction="in" name="value" visibility="public"
-                                  xmi:id="libUnimo_Parameter_111972725"
+                                  xmi:id="libUnimo_Parameter_111972727"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_111972727" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_111972725"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_111972727"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#http://www.e2e.ch/bridge/types/String"
                            xmi:type="uml:Class">
@@ -2453,10 +2685,10 @@
                      <annotatedElement xmi:idref="libUnimo_Operation_1553159305"/>
                   </ownedComment>
                   <ownedParameter direction="in" name="error" visibility="public"
-                                  xmi:id="libUnimo_Parameter_96784906"
+                                  xmi:id="libUnimo_Parameter_96784908"
                                   xmi:type="uml:Parameter">
                      <ownedComment body="" xmi:id="libUnimo_Comment_96784908" xmi:type="uml:Comment">
-                        <annotatedElement xmi:idref="libUnimo_Parameter_96784906"/>
+                        <annotatedElement xmi:idref="libUnimo_Parameter_96784908"/>
                      </ownedComment>
                      <type href="E2E Bridge Base.xml#_9_5_1_be002f9_1137677887489_628032_1"
                            xmi:type="uml:Class">
@@ -2725,6 +2957,16 @@
                      stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_14_0_1_c3202fe_1212135914515_680296_1157"/>
          <stereotype name="Library:E2ELibraryProxyDeployment"
                      stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_14_0_1_c3202fe_1212135914515_359980_1158"/>
+         <stereotype name="Logger:LogChannel"
+                     stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#e2e_bridge_profile__LogChannel"/>
+         <stereotype name="Logger:LogFormatter"
+                     stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#e2e_bridge_profile__LogFormatter"/>
+         <stereotype name="Logger:LogKey"
+                     stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#e2e_bridge_profile__LogKey"/>
+         <stereotype name="Logger:LogKeys"
+                     stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#e2e_bridge_profile__LogKeys"/>
+         <stereotype name="Logger:LogSink"
+                     stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#e2e_bridge_profile__LogSink"/>
          <stereotype name="Basic_Structure:Repository"
                      stereotypeHREF="local:/PROJECT-24cae68e3eb1f384d43b3ae1ca958a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#stereoType_ModelPackage_Repository"/>
          <stereotype name="XML:XML"
@@ -2738,6 +2980,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1074846384"
                                  order="3.0"
                                  xmi:id="-1230678842_typelink"/>
@@ -2748,6 +2991,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1390116706"
                                  order="3.0"
                                  xmi:id="1669327285_typelink"/>
@@ -2758,6 +3002,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1430719988"
                                  order="4.0"
                                  xmi:id="-1833188145_typelink"/>
@@ -2768,6 +3013,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1475092421"
                                  order="4.0"
                                  xmi:id="792407584_typelink"/>
@@ -2778,6 +3024,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1504568046"
                                  order="4.0"
                                  xmi:id="-1076770856_typelink"/>
@@ -2788,6 +3035,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-150745358"
                                  order="2.0"
                                  xmi:id="1244794101_typelink"/>
@@ -2798,6 +3046,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1759844578"
                                  order="2.0"
                                  xmi:id="-46118147_typelink"/>
@@ -2808,6 +3057,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1851648782"
                                  order="3.0"
                                  xmi:id="-420804657_typelink"/>
@@ -2818,6 +3068,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1865052795"
                                  order="3.0"
                                  xmi:id="406023009_typelink"/>
@@ -2828,6 +3079,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-1987169912"
                                  order="7.0"
                                  xmi:id="-406007838_typelink"/>
@@ -2838,6 +3090,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-2108400668"
                                  order="5.0"
                                  xmi:id="882210848_typelink"/>
@@ -2848,6 +3101,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-243936401"
                                  order="1.0"
                                  xmi:id="413405717_typelink"/>
@@ -2858,6 +3112,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-25138953"
                                  order="3.0"
                                  xmi:id="-322513703_typelink"/>
@@ -2868,6 +3123,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_-353016496"
+                                 order="3.0"
+                                 xmi:id="89252472_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-371658688"
                                  order="1.0"
                                  xmi:id="1975396245_typelink"/>
@@ -2878,6 +3145,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-378570705"
                                  order="2.0"
                                  xmi:id="-429032307_typelink"/>
@@ -2888,6 +3156,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-414965225"
                                  order="7.0"
                                  xmi:id="1050242975_typelink"/>
@@ -2898,6 +3167,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-436451950"
                                  order="2.0"
                                  xmi:id="1871722086_typelink"/>
@@ -2908,6 +3178,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-440849191"
                                  order="3.0"
                                  xmi:id="-1596665817_typelink"/>
@@ -2918,6 +3189,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-558359858"
                                  order="8.0"
                                  xmi:id="1001536583_typelink"/>
@@ -2928,6 +3200,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_-568991156"
+                                 order="2.0"
+                                 xmi:id="-1375396445_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-593362926"
                                  order="1.0"
                                  xmi:id="-758991928_typelink"/>
@@ -2938,6 +3222,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-757272188"
                                  order="2.0"
                                  xmi:id="767093992_typelink"/>
@@ -2948,6 +3233,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_-928038154"
                                  order="2.0"
                                  xmi:id="1340418597_typelink"/>
@@ -2958,6 +3244,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1093218763"
                                  order="2.0"
                                  xmi:id="-1130778036_typelink"/>
@@ -2968,6 +3255,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1094572844"
                                  order="6.0"
                                  xmi:id="-152023622_typelink"/>
@@ -2978,6 +3266,30 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_1122906645"
+                                 externalName="transferErrorEvent"
+                                 order="4.0"
+                                 xmi:id="1353880592_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_1126876310"
+                                 order="2.0"
+                                 xmi:id="586760535_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1289632628"
                                  order="4.0"
                                  xmi:id="-1047291391_typelink"/>
@@ -2988,6 +3300,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1292347445"
                                  order="3.0"
                                  xmi:id="-1306856367_typelink"/>
@@ -2998,6 +3311,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1293730793"
                                  order="3.0"
                                  xmi:id="-305965104_typelink"/>
@@ -3008,6 +3322,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1299464201"
                                  order="3.0"
                                  xmi:id="641086874_typelink"/>
@@ -3018,6 +3333,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_1342850970"
+                                 order="3.0"
+                                 xmi:id="1200405015_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1431480734"
                                  order="4.0"
                                  xmi:id="945855749_typelink"/>
@@ -3028,6 +3355,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1554669924"
                                  order="1.0"
                                  xmi:id="1047246973_typelink"/>
@@ -3038,6 +3366,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1562247279"
                                  order="1.0"
                                  xmi:id="898620151_typelink"/>
@@ -3048,6 +3377,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1690855942"
                                  order="1.0"
                                  xmi:id="-1577732493_typelink"/>
@@ -3058,6 +3388,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_1692472512"
+                                 order="1.0"
+                                 xmi:id="84511997_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1741409308"
                                  order="2.0"
                                  xmi:id="1554146009_typelink"/>
@@ -3068,6 +3410,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1800469471"
                                  order="2.0"
                                  xmi:id="483423414_typelink"/>
@@ -3078,6 +3421,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_1822124658"
                                  order="4.0"
                                  xmi:id="1359355525_typelink"/>
@@ -3088,6 +3432,19 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_1945647573"
+                                 externalName="errorEvent"
+                                 order="4.0"
+                                 xmi:id="1550146745_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_2028459704"
                                  order="1.0"
                                  xmi:id="-438528897_typelink"/>
@@ -3098,6 +3455,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_2038692669"
                                  order="1.0"
                                  xmi:id="1365024517_typelink"/>
@@ -3108,6 +3466,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_204113482"
                                  order="5.0"
                                  xmi:id="-850009191_typelink"/>
@@ -3118,6 +3477,19 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_249780107"
+                                 externalName="transferEvent"
+                                 order="4.0"
+                                 xmi:id="2146963016_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_277313133"
                                  order="1.0"
                                  xmi:id="1184527574_typelink"/>
@@ -3128,6 +3500,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_300280769"
                                  order="1.0"
                                  xmi:id="-1877503829_typelink"/>
@@ -3138,6 +3511,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_304135382"
+                                 order="2.0"
+                                 xmi:id="1639409305_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_390178218"
                                  order="1.0"
                                  xmi:id="893567993_typelink"/>
@@ -3148,6 +3533,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_520110042"
+                                 order="3.0"
+                                 xmi:id="-2041892679_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_625831501"
                                  order="2.0"
                                  xmi:id="790456833_typelink"/>
@@ -3158,6 +3555,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_628325196"
                                  order="1.0"
                                  xmi:id="-985953092_typelink"/>
@@ -3168,6 +3566,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_63983685"
                                  order="4.0"
                                  xmi:id="698102292_typelink"/>
@@ -3178,6 +3577,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_723055686"
                                  order="1.0"
                                  xmi:id="1275896516_typelink"/>
@@ -3188,6 +3588,7 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_725949517"
                                  order="4.0"
                                  xmi:id="-987206593_typelink"/>
@@ -3198,6 +3599,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_802929994"
+                                 order="1.0"
+                                 xmi:id="-354701130_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_8904045"
                                  order="6.0"
                                  xmi:id="1492899060_typelink"/>
@@ -3208,6 +3621,18 @@
                                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                                 base_Property="libUnimo_Property_94434432"
+                                 order="1.0"
+                                 xmi:id="-1923633263_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:E2EAttribute xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                 xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                                 xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                  base_Property="libUnimo_Property_966334852"
                                  order="2.0"
                                  xmi:id="-1211182174_typelink"/>
@@ -3218,6 +3643,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-1032083252"
                           namespace="urn:UnimoDataModel.IDs"
                           xmi:id="500835713_typelink"/>
@@ -3228,6 +3654,18 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-1117218931"
+                          namespace="urn:UnimoLibrary.LoggerConfig.TransferError.TransferErrorSink.Formatter"
+                          xmi:id="-303771741_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-1222352633"
                           namespace="urn:UnimoDataModel.Integrations"
                           xmi:id="-478825370_typelink"/>
@@ -3238,6 +3676,29 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-1512133049"
+                          namespace="urn:UnimoLibrary.LoggerConfig.Transfer"
+                          xmi:id="886854216_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-1518036487"
+                          namespace="urn:UnimoLibrary.LoggerConfig.TransferError.TransferErrorSink"
+                          xmi:id="1888373194_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-1529859980"
                           namespace="urn:UnimoDataModel.Services"
                           xmi:id="454694335_typelink"/>
@@ -3248,6 +3709,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-1542516047"
                           namespace="urn:UnimoDataModel.Events"
                           xmi:id="1933076858_typelink"/>
@@ -3258,6 +3720,18 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-1567604157"
+                          namespace="urn:UnimoLibrary.LoggerConfig.Transfer.TransferSink"
+                          xmi:id="1293928381_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-2129270984"
                           namespace="urn:UnimoLibrary"
                           xmi:id="-1272131889_typelink"/>
@@ -3268,6 +3742,40 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-2139944233"
+                          namespace="urn:UnimoLibrary.LoggerConfig.Transfer.TransferSink.Formatter"
+                          xmi:id="668424221_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-26088903"
+                          namespace="urn:UnimoLibrary.LoggerConfig.Exception.ExceptionSink"
+                          xmi:id="554070799_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-37873295"
+                          namespace="urn:UnimoLibrary.LoggerConfig"
+                          xmi:id="-882628195_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-519925896"
                           namespace="urn:UnimoDataModel.Events"
                           xmi:id="-673843507_typelink"/>
@@ -3278,6 +3786,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-524145223"
                           namespace="urn:UnimoDataModel.Integrations"
                           xmi:id="699223567_typelink"/>
@@ -3288,6 +3797,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-766242253"
                           namespace="urn:UnimoDataModel.Integrations"
                           xmi:id="1564135918_typelink"/>
@@ -3298,6 +3808,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-794870208"
                           namespace="urn:UnimoLibrary"
                           xmi:id="897078002_typelink"/>
@@ -3308,6 +3819,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-862162865"
                           namespace="urn:UnimoDataModel.Services"
                           xmi:id="474857717_typelink"/>
@@ -3318,6 +3830,18 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-880325377"
+                          namespace="urn:UnimoLibrary.LoggerConfig"
+                          xmi:id="-2055847452_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-9214242"
                           namespace="urn:UnimoLibrary"
                           xmi:id="-848129909_typelink"/>
@@ -3328,6 +3852,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_-960470986"
                           namespace="urn:UnimoLibrary"
                           xmi:id="1274115604_typelink"/>
@@ -3338,6 +3863,18 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_-984890743"
+                          namespace="urn:UnimoLibrary.LoggerConfig"
+                          xmi:id="-163821997_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1083673821"
                           namespace="urn:UnimoDataModel.Integrations"
                           xmi:id="1485793507_typelink"/>
@@ -3348,6 +3885,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1108781232"
                           namespace="urn:UnimoLibrary"
                           xmi:id="-1207203283_typelink"/>
@@ -3358,6 +3896,18 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_1119078349"
+                          namespace="urn:UnimoLibrary.LoggerConfig.Exception.ExceptionSink.Formatter"
+                          xmi:id="1221992691_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1260079956"
                           namespace="urn:UnimoDataModel.Hosts"
                           xmi:id="141092359_typelink"/>
@@ -3368,6 +3918,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1425816024"
                           namespace="urn:UnimoLibrary"
                           xmi:id="-1489178241_typelink"/>
@@ -3378,6 +3929,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1586461745"
                           namespace="urn:UnimoDataModel.Events"
                           xmi:id="-652242769_typelink"/>
@@ -3388,6 +3940,18 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_1654659473"
+                          namespace="urn:UnimoLibrary.LoggerConfig.Exception"
+                          xmi:id="-816630690_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1754074786"
                           namespace="urn:UnimoDataModel.Integrations"
                           xmi:id="1500808241_typelink"/>
@@ -3398,6 +3962,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_1810806251"
                           namespace="urn:UnimoDataModel.Hosts"
                           xmi:id="-2015344454_typelink"/>
@@ -3408,6 +3973,7 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_331163807"
                           namespace="urn:UnimoLibrary"
                           xmi:id="-73829964_typelink"/>
@@ -3418,9 +3984,21 @@
                           xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                           xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                           xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                           base_Class="libUnimo_Class_622744171"
                           namespace="urn:UnimoDataModel.IDs"
                           xmi:id="-1886581572_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Library:E2EClassProxy xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                          xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                          xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                          xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                          xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                          base_Class="libUnimo_Class_999600593"
+                          namespace="urn:UnimoLibrary.LoggerConfig.TransferError"
+                          xmi:id="-1814087228_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
       <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
    </xmi:Extension>
@@ -3428,6 +4006,7 @@
                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                 xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                 base_Enumeration="libUnimo_Enumeration_-255160410"
                                 namespace="urn:uml-enumeration:UnimoDataModel.Events"
                                 xmi:id="-170469307_typelink"/>
@@ -3438,6 +4017,7 @@
                                 xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                 xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                                 xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                 base_Enumeration="libUnimo_Enumeration_1298510889"
                                 namespace="urn:uml-enumeration:UnimoDataModel.Services"
                                 xmi:id="197197533_typelink"/>
@@ -3448,8 +4028,9 @@
                             xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                             xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                             xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                            xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                             base_Component="libUnimo_Component_-1940259175"
-                            version="2.2.0"
+                            version="3.0.0"
                             xmi:id="1867700303_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
       <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
@@ -3458,10 +4039,266 @@
                                       xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                       xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
                                       xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                                      xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                       base_Artifact="libUnimo_Artifact_-1940259175"
-                                      buildID="1600869637343"
+                                      buildID="1605610682108"
                                       nodeType="E2EBridgeServerInstance"
                                       xmi:id="1787724304_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogChannel xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                      xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                      xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                      xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                      xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                      base_Class="libUnimo_Class_-37873295"
+                      xmi:id="-710800629_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogChannel xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                      xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                      xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                      xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                      xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                      base_Class="libUnimo_Class_-880325377"
+                      xmi:id="-1884019886_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogChannel xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                      xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                      xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                      xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                      xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                      base_Class="libUnimo_Class_-984890743"
+                      xmi:id="8005569_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogFormatter xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                        xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                        xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                        xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                        xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                        base_Class="libUnimo_Class_-1518036487"
+                        format="json"
+                        pattern="[{timestamp}][{level}]{message}"
+                        xmi:id="1370902911_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogFormatter xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                        xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                        xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                        xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                        xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                        base_Class="libUnimo_Class_-1567604157"
+                        format="json"
+                        pattern="[{timestamp}][{level}]{message}"
+                        xmi:id="776458098_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogFormatter xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                        xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                        xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                        xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                        xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                        base_Class="libUnimo_Class_-26088903"
+                        format="json"
+                        pattern="[{timestamp}][{level}]{message}"
+                        xmi:id="36600516_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_-353016496"
+                  xmi:id="-1202184467_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_-568991156"
+                  xmi:id="1628133912_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_1122906645"
+                  xmi:id="62443653_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_1126876310"
+                  xmi:id="-704676404_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_1342850970"
+                  xmi:id="-91031924_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_1692472512"
+                  xmi:id="-1206924942_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_1945647573"
+                  xmi:id="258709806_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_249780107"
+                  xmi:id="855526077_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_304135382"
+                  xmi:id="347972366_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_520110042"
+                  xmi:id="961637678_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_802929994"
+                  xmi:id="-1646138069_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKey xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                  xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                  xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                  xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                  xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                  base_Property="libUnimo_Property_94434432"
+                  xmi:id="1079897094_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKeys xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                   xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                   xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                   xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                   xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                   base_Class="libUnimo_Class_-1117218931"
+                   xmi:id="1689673366_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKeys xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                   xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                   xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                   xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                   xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                   base_Class="libUnimo_Class_-2139944233"
+                   xmi:id="-1633097968_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogKeys xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                   xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                   xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                   xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                   xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                   base_Class="libUnimo_Class_1119078349"
+                   xmi:id="-1079529498_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogSink xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                   xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                   xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                   xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                   xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                   base_Class="libUnimo_Class_-1512133049"
+                   fileNamePattern="logs/{channel}.{sink}_{date_time}{extension}"
+                   level="Info"
+                   sinkType="std_out"
+                   xmi:id="-1414426150_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogSink xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                   xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                   xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                   xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                   xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                   base_Class="libUnimo_Class_1654659473"
+                   fileNamePattern="logs/{channel}.{sink}_{date_time}{extension}"
+                   level="Error"
+                   sinkType="std_err"
+                   xmi:id="1177056240_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Logger:LogSink xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                   xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                   xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                   xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                   xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                   base_Class="libUnimo_Class_999600593"
+                   fileNamePattern="logs/{channel}.{sink}_{date_time}{extension}"
+                   level="Error"
+                   sinkType="std_err"
+                   xmi:id="179599702_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
       <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
    </xmi:Extension>
@@ -3469,6 +4306,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_-1073423868"
                                xmi:id="-1267679359_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3478,6 +4316,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_-1375556099"
                                xmi:id="-588586597_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3487,6 +4326,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_-261949150"
                                xmi:id="-532713832_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3496,6 +4336,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_-659972219"
                                xmi:id="1892217597_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3505,6 +4346,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_1003752960"
                                xmi:id="-2147281877_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3514,6 +4356,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_1009621463"
                                xmi:id="-1148661394_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3523,6 +4366,17 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
+                               base_Package="libUnimo_Package_1397005237"
+                               xmi:id="-1424178517_typelink"/>
+   <xmi:Extension extender="MagicDraw UML 18.0">
+      <modelPart name="com.nomagic.magicdraw.uml_model.shared_model"/>
+   </xmi:Extension>
+   <Basic_Structure:Repository xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
+                               xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+                               xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
+                               xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_1717364934"
                                xmi:id="-1030237057_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3532,6 +4386,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_595381502"
                                xmi:id="800600272_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3541,6 +4396,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_660334417"
                                xmi:id="-2087398166_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3550,6 +4406,7 @@
                                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
                                xmlns:XML="http://www.magicdraw.com/schemas/XML.xmi"
                                xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+                               xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
                                base_Package="libUnimo_Package_675208596"
                                xmi:id="-233316064_typelink"/>
    <xmi:Extension extender="MagicDraw UML 18.0">
@@ -3559,6 +4416,7 @@
             xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
             xmlns:Basic_Structure="http://www.magicdraw.com/schemas/Basic_Structure.xmi"
             xmlns:Library="http://www.magicdraw.com/schemas/Library.xmi"
+            xmlns:Logger="http://www.magicdraw.com/schemas/Logger.xmi"
             base_Class="libUnimo_Class_-794870208"
             xmi:id="-1274807683_typelink"
             xmlElementName="GuidCreator"/>

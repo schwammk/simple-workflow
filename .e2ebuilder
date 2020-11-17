@@ -14,7 +14,7 @@
    </tracer>
    <compiler>
       <uml type="java.io.File">uml</uml>
-      <plugin.magicdraw.lastproject type="java.io.File">uml/StepOneWorker.xml</plugin.magicdraw.lastproject>
+      <plugin.magicdraw.lastproject type="java.io.File">uml/SimpleWorkflow.xml</plugin.magicdraw.lastproject>
       <optimize.java.script type="java.lang.Boolean">false</optimize.java.script>
    </compiler>
 </project>

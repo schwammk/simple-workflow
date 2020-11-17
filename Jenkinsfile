@@ -1,66 +1,31 @@
 #!groovy
 pipeline {
     agent any
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '10'))
-    }
-    triggers {
-        githubPush()
-    }
-
     stages {
-        stage('Docker login') {
+        stage('EnvSetup') {
             steps {
                 script {
-                    env.PROJECT_NAME = 'xxxl-services'
-                    env.GCR = "eu.gcr.io/${env.PROJECT_NAME}/stocklevel"
+                    env.CLOUD_REPO = "schwammk"
                     env.VERSION = getDockerImageVersion()
                 }
-                container('docker') {
-                    withCredentials([file(credentialsId: 'gcr-kyma-xxxlservices', variable: 'keyfile')]) {
-                        sh "cat ${keyfile} | docker login -u _json_key --password-stdin https://eu.gcr.io/${PROJECT_NAME}"
-                    }
-                }
             }
         }
-        stage('ClickstreamPublishing') {
+        stage('SimpleWokflow') {
             steps {
-                container('docker') {
-                    sh "docker build --build-arg SERVICE=ClickstreamPublishing --build-arg PORT=10481 -t ${GCR}/stocklevel-clickstreampublishing-service:${VERSION} ."
-                    sh "docker push ${GCR}/stocklevel-clickstreampublishing-service:${VERSION}"
-                }
+                docker build --build-arg SERVICE=SimpleWorkflow --build-arg PORT=24411 -t ${CLOUD_REPO}/simple-workflow:${VERSION} .
+                docker push ${CLOUD_REPO}/simple-workflow:${VERSION}
             }
         }
-        stage('StockEventCollector') {
+        stage('StepOneWorker') {
             steps {
-                container('docker') {
-                    sh "docker build --build-arg SERVICE=StockEventCollector --build-arg PORT=10480 -t ${GCR}/stocklevel-eventcollector-service:${VERSION} ."
-                    sh "docker push ${GCR}/stocklevel-eventcollector-service:${VERSION}"
-                }
+                docker build --build-arg SERVICE=StepOneWorker --build-arg PORT=24422 -t ${CLOUD_REPO}/step-one-worker:${VERSION} .
+                docker push ${CLOUD_REPO}/step-one-worker:${VERSION}
             }
         }
-        stage('StockFetcher') {
+        stage('StepTwoWorker') {
             steps {
-                container('docker') {
-                    sh "docker build --build-arg SERVICE=StockFetcher --build-arg PORT=10482 -t ${GCR}/stocklevel-stockfetcher-service:${VERSION} ."
-                    sh "docker push ${GCR}/stocklevel-stockfetcher-service:${VERSION}"
-                }
-            }
-        }
-        stage('StockLevelCacheManager') {
-            steps {
-                container('docker') {
-                    sh "docker build --build-arg SERVICE=StockLevelCacheManager --build-arg PORT=10483 -t ${GCR}/stocklevel-cachemanager-service:${VERSION} ."
-                    sh "docker push ${GCR}/stocklevel-cachemanager-service:${VERSION}"
-                }
-            }
-        }
-        stage('StockLevelCacheConnector') {
-            steps {
-                container('docker') {
-                    sh "docker build --build-arg SERVICE=StockLevelCacheConnector --build-arg PORT=10485 -t ${GCR}/stocklevel-cacheconnector-service:${VERSION} ."
-                    sh "docker push ${GCR}/stocklevel-cacheconnector-service:${VERSION}"
-                }
+                docker build --build-arg SERVICE=StepTwoWorker --build-arg PORT=24433 -t ${CLOUD_REPO}/step-two-worker:${VERSION} .
+                docker push ${CLOUD_REPO}/step-two-worker:${VERSION}
             }
         }
     }
