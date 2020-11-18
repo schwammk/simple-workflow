@@ -1,0 +1,135 @@
+
+{
+    "channels": {
+        "error": {
+            "sinks": {
+                "default": {
+                    "type": "daily_rotated_file",
+                    "params": {
+                        "name_pattern": "logs/error_%Y-%m-%d.json"
+                    },
+                    "formatter": {
+                        "type": "json"
+                    },
+                    "filters": [
+                        {
+                            "level": [
+                                "Info"
+                            ]
+                        }
+                    ]
+                },
+                "monitoring": {
+                    "type": "std_out",
+                    "formatter": {
+                        "type": "json"
+                    },
+                    "filters": [
+                        {
+                            "level": [
+                                "Error"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "access": {
+            "sinks": {
+                "default": {
+                    "type": "std_out",
+                    "formatter": {
+                        "type": "json"
+                    },
+                    "filters": [
+                        {
+                            "trx_level": ["Custom"],
+                            "domains": ["*"]
+                        }
+                    ]
+                }
+            }
+        },
+        "Exception": {
+            "sinks": {
+                "ExceptionSink": {
+                    "type": "std_out",
+                    "filters": [
+                        {
+                            "level": [
+                                "Error"
+                            ]
+                        }
+                    ],
+                    "formatter": {
+                        "type": "json",
+                        "params": {
+                            "keys": {
+                                "at": null,
+                                "channel": null,
+                                "details": {
+                                    "name": "errorEvent"
+                                },
+                                "message": null
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Transfer": {
+            "sinks": {
+                "TransferSink": {
+                    "type": "std_out",
+                    "filters": [
+                        {
+                            "level": [
+                                "Info"
+                            ]
+                        }
+                    ],
+                    "formatter": {
+                        "type": "json",
+                        "params": {
+                            "keys": {
+                                "at": null,
+                                "channel": null,
+                                "details": {
+                                    "name": "transferEvent"
+                                },
+                                "message": null
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "TransferError": {
+            "sinks": {
+                "TransferErrorSink": {
+                    "type": "std_out",
+                    "filters": [
+                        {
+                            "level": [
+                                "Error"
+                            ]
+                        }
+                    ],
+                    "formatter": {
+                        "type": "json",
+                        "params": {
+                            "keys": {
+                                "at": null,
+                                "channel": null,
+                                "details": {
+                                    "name": "transferErrorEvent"
+                                },
+                                "message": null
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

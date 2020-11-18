@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Substitutions>
+   <Files>
+      <File target="tabfiles/AddOns/SOAP/Service/htdoc.tab"
+            template="templates/AddOns/SOAP/Service/htdoc.tab"/>
+      <File target="tabfiles/Core/dump.tab" template="templates/Core/dump.tab"/>
+      <File target="tabfiles/AddOns/Java/base.tab"
+            template="templates/AddOns/Java/base.tab"/>
+      <File target="tabfiles/AddOns/PersistentState/base.tab"
+            template="templates/AddOns/PersistentState/base.tab"/>
+      <File target="tabfiles/AddOns/SQL/sqlconnection.tab"
+            template="templates/AddOns/SQL/sqlconnection.tab"/>
+      <File target="tabfiles/AddOns/SQL/sqlauthorization.tab"
+            template="templates/AddOns/SQL/sqlauthorization.tab"/>
+      <File target="tabfiles/AddOns/Functions/FUC/createvalue.tab"
+            template="templates/AddOns/Functions/FUC/createvalue.tab"/>
+      <File target="tabfiles/AddOns/Timer/base.tab"
+            template="templates/AddOns/Timer/base.tab"/>
+      <File target="tabfiles/AddOns/FlatFile/base.tab"
+            template="templates/AddOns/FlatFile/base.tab"/>
+      <File target="tabfiles/AddOns/REST/service.tab"
+            template="templates/AddOns/REST/service.tab"/>
+      <File target="tabfiles/AddOns/REST/htdoc.tab"
+            template="templates/AddOns/REST/htdoc.tab"/>
+      <File target="tabfiles/AddOns/SOAP/Service/base.tab"
+            template="templates/AddOns/SOAP/Service/base.tab"/>
+      <File target="tabfiles/AddOns/SOAP/Service/request.tab"
+            template="templates/AddOns/SOAP/Service/request.tab"/>
+      <File target="wsdl/E2ETestService.wsdl"
+            template="templates/wsdl/E2ETestService.wsdl"/>
+      <File target="wsdl/ActiveMQ-5.15.9.wsdl"
+            template="templates/wsdl/ActiveMQ-5.15.9.wsdl"/>
+      <File target="wsdl/SimpleWorkflowService.wsdl"
+            template="templates/wsdl/SimpleWorkflowService.wsdl"/>
+      <File target="wsdl/TimerService.wsdl"
+            template="templates/wsdl/TimerService.wsdl"/>
+      <File target="tabfiles/AddOns/SAP/settings.tab"
+            template="templates/AddOns/SAP/settings.tab"/>
+      <File target="deploy.xml" template="deploy.xml"/>
+   </Files>
+   <Dependencies>
+      <Depending on="addOn_libUnimo__UILibraryPath_UILibraryCacheControl">
+         <Dependent template="templates/AddOns/SOAP/Service/htdoc.tab"/>
+      </Depending>
+      <Depending on="addOn_core.dump.not-catched-errors">
+         <Dependent template="templates/Core/dump.tab"/>
+      </Depending>
+      <Depending on="addOn_core.dump.not-catched-errors_core.dump.catched-errors">
+         <Dependent template="templates/Core/dump.tab"/>
+      </Depending>
+      <Depending on="addOn_core.dump.not-catched-errors_core.dump.catched-errors_core.dump.catched-errors.domain">
+         <Dependent template="templates/Core/dump.tab"/>
+      </Depending>
+      <Depending on="addOn_core.dump.not-catched-errors_core.dump.catched-errors_core.dump.catched-errors.code">
+         <Dependent template="templates/Core/dump.tab"/>
+      </Depending>
+      <Depending on="ALIAS_VirtualMachine_ClassPath">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_VirtualMachine_Options_Option1">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_VirtualMachine_Options_Option2">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_VirtualMachine_Options_Option3">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_VirtualMachine_ParallelOperations">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="addOn_UILibraryPath_UILibraryCacheControl">
+         <Dependent template="templates/AddOns/SOAP/Service/htdoc.tab"/>
+      </Depending>
+      <Depending on="ALIAS_Persistent State_Database">
+         <Dependent template="templates/AddOns/PersistentState/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_Persistent State_WorkerLimit">
+         <Dependent template="templates/AddOns/PersistentState/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_Persistent State_Owner">
+         <Dependent template="templates/AddOns/PersistentState/base.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_DBType">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_DBName">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_UnicodeMode">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_ConnectionPooling">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_MaxConnectionReuse">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_MaxConnectionAge">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_PStateDB_MaxConnectionIdleTime">
+         <Dependent template="templates/AddOns/SQL/sqlconnection.tab"/>
+      </Depending>
+      <Depending on="addOn_SQLAuthorization_PStateDB_DBUser">
+         <Dependent template="templates/AddOns/SQL/sqlauthorization.tab"/>
+      </Depending>
+      <Depending on="addOn_SQLAuthorization_PStateDB_DBPassword">
+         <Dependent template="templates/AddOns/SQL/sqlauthorization.tab"/>
+      </Depending>
+      <Depending on="global_getCompositeName">
+         <Dependent template="templates/AddOns/Functions/FUC/createvalue.tab"/>
+      </Depending>
+      <Depending on="global_UnimoSettings::workflowProcessId">
+         <Dependent template="templates/AddOns/Functions/FUC/createvalue.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_host">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_port">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_protocol">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_acknowledgeMode">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_timeToLive">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_selector">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_Authentication_user">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_Authentication_password">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_Properties_Property_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSConnection_Properties_Property_value">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepOneTodoAlias_JMSDestination_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneListener_ListenerPool_ListenerPool_maxTotal">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneListener_ListenerPool_ListenerPool_minIdle">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneListener_ListenerPool_ListenerPool_minEvictableIdleTimeMillis">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneListener_ListenerPool_ListenerPool_timeBetweenEvictionRunsMillis">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneListener_ListenerPool_ListenerPool_numTestsPerEvictionRun">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_connectionFactoryName">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_initialContextFactory">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxTotal">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_minIdle">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxIdle">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_minEvictableIdleTimeMillis">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_numTestsPerEvictionRun">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_timeBetweenEvictionRunsMillis">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxWaitSec">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxTotal">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_minIdle">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxIdle">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_minEvictableIdleTimeMillis">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_numTestsPerEvictionRun">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_timeBetweenEvictionRunsMillis">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxWaitSec">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_host">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_port">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_protocol">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_acknowledgeMode">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_timeToLive">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_selector">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_Authentication_user">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_Authentication_password">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_Properties_Property_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSConnection_Properties_Property_value">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepTwoTodoAlias_JMSDestination_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_host">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_port">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_protocol">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_acknowledgeMode">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_timeToLive">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_selector">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_Authentication_user">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_Authentication_password">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_Properties_Property_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSConnection_Properties_Property_value">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_StepDoneAlias_JMSDestination_name">
+         <Dependent template="templates/AddOns/Java/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_NewProcessCreation_FirstOccurrence">
+         <Dependent template="templates/AddOns/Timer/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_NewProcessCreation_RepeatInterval">
+         <Dependent template="templates/AddOns/Timer/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_NewProcessCreation_Occurrences">
+         <Dependent template="templates/AddOns/Timer/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_NewProcessCreation_ParallelEvents">
+         <Dependent template="templates/AddOns/Timer/base.tab"/>
+      </Depending>
+      <Depending on="ALIAS_NewProcessCreation_QueuedEvents">
+         <Dependent template="templates/AddOns/Timer/base.tab"/>
+      </Depending>
+      <Depending on="addOn_FlatFileAddOn_50_random_ip_addresses_Trace">
+         <Dependent template="templates/AddOns/FlatFile/base.tab"/>
+      </Depending>
+      <Depending on="addOn_FlatFileAddOn_50_random_ip_addresses_FileName">
+         <Dependent template="templates/AddOns/FlatFile/base.tab"/>
+      </Depending>
+      <Depending on="addOn_FlatFileAddOn_50_random_ip_addresses_Encoding">
+         <Dependent template="templates/AddOns/FlatFile/base.tab"/>
+      </Depending>
+      <Depending on="addOn_FlatFileAddOn_50_random_names_Trace">
+         <Dependent template="templates/AddOns/FlatFile/base.tab"/>
+      </Depending>
+      <Depending on="addOn_FlatFileAddOn_50_random_names_FileName">
+         <Dependent template="templates/AddOns/FlatFile/base.tab"/>
+      </Depending>
+      <Depending on="addOn_FlatFileAddOn_50_random_names_Encoding">
+         <Dependent template="templates/AddOns/FlatFile/base.tab"/>
+      </Depending>
+      <Depending on="addOn_Services_Service_xUMLControllerService_MaximumConnections">
+         <Dependent template="templates/AddOns/REST/service.tab"/>
+      </Depending>
+      <Depending on="addOn_Services_Service_xUMLControllerService_ResolveHostnames">
+         <Dependent template="templates/AddOns/REST/service.tab"/>
+      </Depending>
+      <Depending on="addOn_Services_Service_xUMLControllerService_Port">
+         <Dependent template="templates/AddOns/REST/service.tab"/>
+         <Dependent template="deploy.xml"/>
+      </Depending>
+      <Depending on="addOn_Services_Service_xUMLControllerService_JSONComposerOptions_keepNulls">
+         <Dependent template="templates/AddOns/REST/service.tab"/>
+      </Depending>
+      <Depending on="addOn_Services_Service_xUMLControllerService_JSONComposerOptions_compact">
+         <Dependent template="templates/AddOns/REST/service.tab"/>
+      </Depending>
+      <Depending on="addOn_RestTestToolCacheControl">
+         <Dependent template="templates/AddOns/REST/htdoc.tab"/>
+      </Depending>
+      <Depending on="addOn_RestDescriptorCacheControl">
+         <Dependent template="templates/AddOns/REST/htdoc.tab"/>
+      </Depending>
+      <Depending on="addOn_Timer_Switch">
+         <Dependent template="templates/AddOns/Timer/base.tab"/>
+      </Depending>
+      <Depending on="addOn_SOAP_AllowTracing">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+      </Depending>
+      <Depending on="addOn_SEI_HTTP_Service_MaximumConnections">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+      </Depending>
+      <Depending on="addOn_SEI_HTTP_Service_ResolveHostnames">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+      </Depending>
+      <Depending on="addOn_SEI_HTTP_Service_E2ETestService_Port">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+         <Dependent template="templates/wsdl/E2ETestService.wsdl"/>
+         <Dependent template="deploy.xml"/>
+      </Depending>
+      <Depending on="addOn_service_ActiveMQ-5.15.9_ActiveMQ-5.15.9_shadow_port">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+         <Dependent template="templates/wsdl/ActiveMQ-5.15.9.wsdl"/>
+         <Dependent template="deploy.xml"/>
+      </Depending>
+      <Depending on="addOn_SEI_HTTP_Service_SimpleWorkflowService_Port">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+         <Dependent template="templates/wsdl/SimpleWorkflowService.wsdl"/>
+         <Dependent template="deploy.xml"/>
+      </Depending>
+      <Depending on="addOn_service_TimerService_TimerService_shadow_port">
+         <Dependent template="templates/AddOns/SOAP/Service/base.tab"/>
+         <Dependent template="templates/wsdl/TimerService.wsdl"/>
+         <Dependent template="deploy.xml"/>
+      </Depending>
+      <Depending on="addOn_E2ETestService.TestDataGenerator_Enabled">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_E2ETestService.TestDataGenerator_URI">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_ActiveMQ-5.15.9.StepDoneListener_Enabled">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_ActiveMQ-5.15.9.StepDoneListener_URI">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_SimpleWorkflowService.SimpleWorkflowPort_Enabled">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_SimpleWorkflowService.SimpleWorkflowPort_URI">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_SimpleWorkflowService.SimpleWorkflowPort_AuthMode">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_TimerService.NewProcessCreation_Enabled">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="addOn_TimerService.NewProcessCreation_URI">
+         <Dependent template="templates/AddOns/SOAP/Service/request.tab"/>
+      </Depending>
+      <Depending on="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.E2ETestService">
+         <Dependent template="templates/wsdl/E2ETestService.wsdl"/>
+      </Depending>
+      <Depending on="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.ActiveMQ-5.15.9">
+         <Dependent template="templates/wsdl/ActiveMQ-5.15.9.wsdl"/>
+      </Depending>
+      <Depending on="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.SimpleWorkflowService">
+         <Dependent template="templates/wsdl/SimpleWorkflowService.wsdl"/>
+      </Depending>
+      <Depending on="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.TimerService">
+         <Dependent template="templates/wsdl/TimerService.wsdl"/>
+      </Depending>
+      <Depending on="addOn_Settings_FieldPadding">
+         <Dependent template="templates/AddOns/SAP/settings.tab"/>
+      </Depending>
+      <Depending on="addOn_Settings_DefaultConnectionPoolSize">
+         <Dependent template="templates/AddOns/SAP/settings.tab"/>
+      </Depending>
+      <Depending on="addOn_Settings_ServerWorkerThreads">
+         <Dependent template="templates/AddOns/SAP/settings.tab"/>
+      </Depending>
+   </Dependencies>
+   <Variables>
+      <Variable default="max-age=2592000, public"
+                name="addOn_libUnimo__UILibraryPath_UILibraryCacheControl"
+                type=""/>
+      <Variable default="true"
+                friendlyId="AO_DUMP_UNCAUGHT_ERRORS"
+                name="addOn_core.dump.not-catched-errors"
+                type=""/>
+      <Variable default="false"
+                friendlyId="AO_DUMP_CAUGHT_ERRORS"
+                name="addOn_core.dump.not-catched-errors_core.dump.catched-errors"
+                type=""/>
+      <Variable default="*"
+                friendlyId="AO_DUMP_CAUGHT_ERRORS_DOMAIN"
+                name="addOn_core.dump.not-catched-errors_core.dump.catched-errors_core.dump.catched-errors.domain"
+                type=""/>
+      <Variable default="*"
+                friendlyId="AO_DUMP_CAUGHT_ERRORS_CODE"
+                name="addOn_core.dump.not-catched-errors_core.dump.catched-errors_core.dump.catched-errors.code"
+                type=""/>
+      <Variable default="./repository/java/lib/addon.jar;./repository/java/lib/wrapper.jar;${CONSOLE_HOME}/java/lib/E2E/e2etools.jar;./repository/java/resources/;${CONSOLE_HOME}/java/lib/pool/commons-pool.jar;${INSTANCES_HOME}/java/lib/commons-pool.jar;${CONSOLE_HOME}/java/lib/codec/commons-codec.jar;${INSTANCES_HOME}/java/lib/commons-codec.jar;./repository/java/lib/TinyLogAdapter-all.jar;./repository/java/lib/GuidGenerator-all.jar;${CONSOLE_HOME}/java/lib/xerces_2-7-1/resolver.jar;${CONSOLE_HOME}/java/lib/xerces_2-7-1/xercesImpl.jar;${CONSOLE_HOME}/java/lib/xerces_2-7-1/xml-apis.jar;${CONSOLE_HOME}/java/lib/saxonb_8-6/saxon8.jar;${CONSOLE_HOME}/java/lib/saxonb_8-6/saxon8-jdom.jar;${CONSOLE_HOME}/java/lib/saxonb_8-6/saxon8-dom.jar;${CONSOLE_HOME}/java/lib/saxonb_8-6/saxon8-sql.jar;${CONSOLE_HOME}/java/lib/saxonb_8-6/saxon8-xom.jar;${CONSOLE_HOME}/java/lib/saxonb_8-6/saxon8-xpath.jar;;${CONSOLE_HOME}/java/lib/activemq-5.15.9/activemq-all-5.15.9.jar;${CONSOLE_HOME}/java/lib/j2ee/j2ee.jar;"
+                friendlyId="AL_JVM_CLASSPATH"
+                name="ALIAS_VirtualMachine_ClassPath"
+                type=""/>
+      <Variable default="-DINSTANCES_HOME=${INSTANCES_HOME}"
+                friendlyId="AL_JVM_OPT1"
+                name="ALIAS_VirtualMachine_Options_Option1"
+                type=""/>
+      <Variable default="-DBRIDGESERVER_BIN=${BRIDGESERVER_BIN}"
+                friendlyId="AL_JVM_OPT2"
+                name="ALIAS_VirtualMachine_Options_Option2"
+                type=""/>
+      <Variable default="-Xrs"
+                friendlyId="AL_JVM_OPT3"
+                name="ALIAS_VirtualMachine_Options_Option3"
+                type=""/>
+      <Variable default="100"
+                friendlyId="AL_JVM_PARALLELOPERATIONS"
+                name="ALIAS_VirtualMachine_ParallelOperations"
+                type=""/>
+      <Variable default="max-age=2592000, public"
+                friendlyId="AO_UILIBRARYPATH_UILIBRARYCACHECONTROL"
+                name="addOn_UILibraryPath_UILibraryCacheControl"
+                type=""/>
+      <Variable default="PStateDB"
+                friendlyId="AL_PS_DATABASE"
+                name="ALIAS_Persistent State_Database"
+                type=""/>
+      <Variable default="10"
+                friendlyId="AL_PS_WORKERLIMIT"
+                name="ALIAS_Persistent State_WorkerLimit"
+                type=""/>
+      <Variable default="SimpleWorkflow"
+                friendlyId="AL_PS_OWNER"
+                name="ALIAS_Persistent State_Owner"
+                type=""/>
+      <Variable default="{{SwfPstateDBType}}"
+                friendlyId="AO_PSTATEDB_DBTYPE"
+                name="addOn_PStateDB_DBType"
+                type=""/>
+      <Variable default="{{SwfPstateDBConn}}"
+                friendlyId="AO_PSTATEDB_DBNAME"
+                name="addOn_PStateDB_DBName"
+                type=""/>
+      <Variable default="Platform default"
+                friendlyId="AO_PSTATEDB_UNICODEMODE"
+                name="addOn_PStateDB_UnicodeMode"
+                type=""/>
+      <Variable default="true"
+                friendlyId="AO_PSTATEDB_CONNECTIONPOOLING"
+                name="addOn_PStateDB_ConnectionPooling"
+                type=""/>
+      <Variable default="1000"
+                friendlyId="AO_PSTATEDB_MAXCONNECTIONREUSE"
+                name="addOn_PStateDB_MaxConnectionReuse"
+                type=""/>
+      <Variable default="15"
+                friendlyId="AO_PSTATEDB_MAXCONNECTIONAGE"
+                name="addOn_PStateDB_MaxConnectionAge"
+                type=""/>
+      <Variable default="60"
+                friendlyId="AO_PSTATEDB_MAXCONNECTIONIDLETIME"
+                name="addOn_PStateDB_MaxConnectionIdleTime"
+                type=""/>
+      <Variable default="{{SwfPstateDBUser}}"
+                friendlyId="AO_PSTATEDB_USER"
+                name="addOn_SQLAuthorization_PStateDB_DBUser"
+                type=""/>
+      <Variable default="{{SwfPstateDBPwd}}"
+                friendlyId="AO_PSTATEDB_PWD"
+                name="addOn_SQLAuthorization_PStateDB_DBPassword"
+                type="password"/>
+      <Variable default="SimpleWorkflow"
+                name="global_getCompositeName"
+                type="string"/>
+      <Variable default="undefined"
+                friendlyId="G_UNIMOSETTINGS_WORKFLOWPROCESSID"
+                name="global_UnimoSettings::workflowProcessId"
+                type=""/>
+      <Variable default="StepOneTodoAlias"
+                friendlyId="AL_STEPONETODOALIAS_NAME"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_name"
+                type=""/>
+      <Variable default="{{AMQ_Host}}"
+                friendlyId="AL_STEPONETODOALIAS_HOST"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_host"
+                type=""/>
+      <Variable default="61616"
+                friendlyId="AL_STEPONETODOALIAS_PORT"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_port"
+                type=""/>
+      <Variable default="tcp"
+                friendlyId="AL_STEPONETODOALIAS_PROTOCOL"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_protocol"
+                type=""/>
+      <Variable default="Auto"
+                friendlyId="AL_STEPONETODOALIAS_ACKNOWLEDGEMODE"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_acknowledgeMode"
+                type=""/>
+      <Variable default="0"
+                friendlyId="AL_STEPONETODOALIAS_TIMETOLIVE"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_timeToLive"
+                type=""/>
+      <Variable default=""
+                friendlyId="AL_STEPONETODOALIAS_SELECTOR"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_selector"
+                type=""/>
+      <Variable default="{{AMQ_User}}"
+                friendlyId="AL_STEPONETODOALIAS_USER"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_Authentication_user"
+                type=""/>
+      <Variable default="{{AMQ_Pwd}}"
+                friendlyId="AL_STEPONETODOALIAS_PWD"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_Authentication_password"
+                type=""/>
+      <Variable default="topic.JMSDestination"
+                friendlyId="AL_STEPONETODOALIAS_PROP_NAME"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_Properties_Property_name"
+                type=""/>
+      <Variable default="VirtualTopic.SwfStep.One.ToDo"
+                friendlyId="AL_STEPONETODOALIAS_PROP_VALUE"
+                name="ALIAS_StepOneTodoAlias_JMSConnection_Properties_Property_value"
+                type=""/>
+      <Variable default="JMSDestination"
+                friendlyId="AL_STEPONETODOALIAS_JMSDESTINATION_NAME"
+                name="ALIAS_StepOneTodoAlias_JMSDestination_name"
+                type=""/>
+      <Variable default="1"
+                friendlyId="AL_STEPDONELISTENER_LISTENERPOOL_MAXTOTAL"
+                name="ALIAS_StepDoneListener_ListenerPool_ListenerPool_maxTotal"
+                type=""/>
+      <Variable default="1"
+                friendlyId="AL_STEPDONELISTENER_LISTENERPOOL_MINIDLE"
+                name="ALIAS_StepDoneListener_ListenerPool_ListenerPool_minIdle"
+                type=""/>
+      <Variable default="1800000"
+                friendlyId="AL_STEPDONELISTENER_LISTENERPOOL_MINEVICTABLEIDLETIMEMILLIS"
+                name="ALIAS_StepDoneListener_ListenerPool_ListenerPool_minEvictableIdleTimeMillis"
+                type=""/>
+      <Variable default="-1"
+                friendlyId="AL_STEPDONELISTENER_LISTENERPOOL_TIMEBETWEENEVICTIONRUNSMILLIS"
+                name="ALIAS_StepDoneListener_ListenerPool_ListenerPool_timeBetweenEvictionRunsMillis"
+                type=""/>
+      <Variable default="3"
+                friendlyId="AL_STEPDONELISTENER_LISTENERPOOL_NUMTESTSPEREVICTIONRUN"
+                name="ALIAS_StepDoneListener_ListenerPool_ListenerPool_numTestsPerEvictionRun"
+                type=""/>
+      <Variable default="ActiveMQ-5.15.9_ContextFactory"
+                name="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_name"
+                type=""/>
+      <Variable default="ConnectionFactory"
+                name="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_connectionFactoryName"
+                type=""/>
+      <Variable default="org.apache.activemq.jndi.ActiveMQInitialContextFactory"
+                name="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_initialContextFactory"
+                type=""/>
+      <Variable default="-1"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxTotal"
+                type=""/>
+      <Variable default="0"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_minIdle"
+                type=""/>
+      <Variable default="5"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxIdle"
+                type=""/>
+      <Variable default="600000"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_minEvictableIdleTimeMillis"
+                type=""/>
+      <Variable default="3"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_numTestsPerEvictionRun"
+                type=""/>
+      <Variable default="540000"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_timeBetweenEvictionRunsMillis"
+                type=""/>
+      <Variable default="300"
+                name="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxWaitSec"
+                type=""/>
+      <Variable default="-1"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxTotal"
+                type=""/>
+      <Variable default="0"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_minIdle"
+                type=""/>
+      <Variable default="10"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxIdle"
+                type=""/>
+      <Variable default="600000"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_minEvictableIdleTimeMillis"
+                type=""/>
+      <Variable default="3"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_numTestsPerEvictionRun"
+                type=""/>
+      <Variable default="540000"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_timeBetweenEvictionRunsMillis"
+                type=""/>
+      <Variable default="300"
+                name="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxWaitSec"
+                type=""/>
+      <Variable default="StepTwoTodoAlias"
+                friendlyId="AL_STEPTWOTODOALIAS_NAME"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_name"
+                type=""/>
+      <Variable default="{{AMQ_Host}}"
+                friendlyId="AL_STEPTWOTODOALIAS_HOST"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_host"
+                type=""/>
+      <Variable default="61616"
+                friendlyId="AL_STEPTWOTODOALIAS_PORT"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_port"
+                type=""/>
+      <Variable default="tcp"
+                friendlyId="AL_STEPTWOTODOALIAS_PROTOCOL"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_protocol"
+                type=""/>
+      <Variable default="Auto"
+                friendlyId="AL_STEPTWOTODOALIAS_ACKNOWLEDGEMODE"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_acknowledgeMode"
+                type=""/>
+      <Variable default="0"
+                friendlyId="AL_STEPTWOTODOALIAS_TIMETOLIVE"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_timeToLive"
+                type=""/>
+      <Variable default=""
+                friendlyId="AL_STEPTWOTODOALIAS_SELECTOR"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_selector"
+                type=""/>
+      <Variable default="{{AMQ_User}}"
+                friendlyId="AL_STEPTWOTODOALIAS_USER"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_Authentication_user"
+                type=""/>
+      <Variable default="{{AMQ_Pwd}}"
+                friendlyId="AL_STEPTWOTODOALIAS_PWD"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_Authentication_password"
+                type=""/>
+      <Variable default="topic.JMSDestination"
+                friendlyId="AL_STEPTWOTODOALIAS_PROP_NAME"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_Properties_Property_name"
+                type=""/>
+      <Variable default="VirtualTopic.SwfStep.Two.ToDo"
+                friendlyId="AL_STEPTWOTODOALIAS_PROP_VALUE"
+                name="ALIAS_StepTwoTodoAlias_JMSConnection_Properties_Property_value"
+                type=""/>
+      <Variable default="JMSDestination"
+                friendlyId="AL_STEPTWOTODOALIAS_JMSDESTINATION_NAME"
+                name="ALIAS_StepTwoTodoAlias_JMSDestination_name"
+                type=""/>
+      <Variable default="StepDoneAlias"
+                friendlyId="AL_STEPDONEALIAS_NAME"
+                name="ALIAS_StepDoneAlias_JMSConnection_name"
+                type=""/>
+      <Variable default="{{AMQ_Host}}"
+                friendlyId="AL_STEPDONEALIAS_HOST"
+                name="ALIAS_StepDoneAlias_JMSConnection_host"
+                type=""/>
+      <Variable default="61616"
+                friendlyId="AL_STEPDONEALIAS_PORT"
+                name="ALIAS_StepDoneAlias_JMSConnection_port"
+                type=""/>
+      <Variable default="tcp"
+                friendlyId="AL_STEPDONEALIAS_PROTOCOL"
+                name="ALIAS_StepDoneAlias_JMSConnection_protocol"
+                type=""/>
+      <Variable default="Auto"
+                friendlyId="AL_STEPDONEALIAS_ACKNOWLEDGEMODE"
+                name="ALIAS_StepDoneAlias_JMSConnection_acknowledgeMode"
+                type=""/>
+      <Variable default="0"
+                friendlyId="AL_STEPDONEALIAS_TIMETOLIVE"
+                name="ALIAS_StepDoneAlias_JMSConnection_timeToLive"
+                type=""/>
+      <Variable default=""
+                friendlyId="AL_STEPDONEALIAS_SELECTOR"
+                name="ALIAS_StepDoneAlias_JMSConnection_selector"
+                type=""/>
+      <Variable default="{{AMQ_User}}"
+                friendlyId="AL_STEPDONEALIAS_USER"
+                name="ALIAS_StepDoneAlias_JMSConnection_Authentication_user"
+                type=""/>
+      <Variable default="{{AMQ_Pwd}}"
+                friendlyId="AL_STEPDONEALIAS_PWD"
+                name="ALIAS_StepDoneAlias_JMSConnection_Authentication_password"
+                type=""/>
+      <Variable default="topic.JMSDestination"
+                friendlyId="AL_STEPDONEALIAS_PROP_NAME"
+                name="ALIAS_StepDoneAlias_JMSConnection_Properties_Property_name"
+                type=""/>
+      <Variable default="VirtualTopic.SwfStep.*.Done"
+                friendlyId="AL_STEPDONEALIAS_PROP_VALUE"
+                name="ALIAS_StepDoneAlias_JMSConnection_Properties_Property_value"
+                type=""/>
+      <Variable default="JMSDestination"
+                friendlyId="AL_STEPDONEALIAS_JMSDESTINATION_NAME"
+                name="ALIAS_StepDoneAlias_JMSDestination_name"
+                type=""/>
+      <Variable default="PT5S"
+                friendlyId="AL_NEWPROCESSCREATION_FIRSTOCCURRENCE"
+                name="ALIAS_NewProcessCreation_FirstOccurrence"
+                type=""/>
+      <Variable default="PT1S"
+                friendlyId="AL_NEWPROCESSCREATION_REPEATINTERVAL"
+                name="ALIAS_NewProcessCreation_RepeatInterval"
+                type=""/>
+      <Variable default="0"
+                friendlyId="AL_NEWPROCESSCREATION_OCCURRENCES"
+                name="ALIAS_NewProcessCreation_Occurrences"
+                type=""/>
+      <Variable default="1"
+                friendlyId="AL_NEWPROCESSCREATION_PARALLELEVENTS"
+                name="ALIAS_NewProcessCreation_ParallelEvents"
+                type=""/>
+      <Variable default="0"
+                friendlyId="AL_NEWPROCESSCREATION_QUEUEDEVENTS"
+                name="ALIAS_NewProcessCreation_QueuedEvents"
+                type=""/>
+      <Variable default="false"
+                friendlyId="AO_FF_50_RANDOM_IP_ADDRESSES_TRACE"
+                name="addOn_FlatFileAddOn_50_random_ip_addresses_Trace"
+                type=""/>
+      <Variable default="../resource/50_random_ip_addresses.txt"
+                friendlyId="AO_FF_50_RANDOM_IP_ADDRESSES_FILENAME"
+                name="addOn_FlatFileAddOn_50_random_ip_addresses_FileName"
+                type=""/>
+      <Variable default="utf-8"
+                friendlyId="AO_FF_50_RANDOM_IP_ADDRESSES_ENCODING"
+                name="addOn_FlatFileAddOn_50_random_ip_addresses_Encoding"
+                type=""/>
+      <Variable default="false"
+                friendlyId="AO_FF_50_RANDOM_NAMES_TRACE"
+                name="addOn_FlatFileAddOn_50_random_names_Trace"
+                type=""/>
+      <Variable default="../resource/50_random_names.txt"
+                friendlyId="AO_FF_50_RANDOM_NAMES_FILENAME"
+                name="addOn_FlatFileAddOn_50_random_names_FileName"
+                type=""/>
+      <Variable default="utf-8"
+                friendlyId="AO_FF_50_RANDOM_NAMES_ENCODING"
+                name="addOn_FlatFileAddOn_50_random_names_Encoding"
+                type=""/>
+      <Variable default="50"
+                friendlyId="CTRL_MAXIMUMCONNECTIONS"
+                name="addOn_Services_Service_xUMLControllerService_MaximumConnections"
+                type=""/>
+      <Variable default="true"
+                friendlyId="CTRL_RESOLVEHOSTNAMES"
+                name="addOn_Services_Service_xUMLControllerService_ResolveHostnames"
+                type=""/>
+      <Variable default="24411"
+                friendlyId="CTRL_PORT"
+                name="addOn_Services_Service_xUMLControllerService_Port"
+                type="integer"/>
+      <Variable default="false"
+                friendlyId="CTRL_JSONCOMPOSEROPTIONS_KEEPNULLS"
+                name="addOn_Services_Service_xUMLControllerService_JSONComposerOptions_keepNulls"
+                type="boolean"/>
+      <Variable default="true"
+                friendlyId="CTRL_JSONCOMPOSEROPTIONS_COMPACT"
+                name="addOn_Services_Service_xUMLControllerService_JSONComposerOptions_compact"
+                type="boolean"/>
+      <Variable default="max-age=2592000, public"
+                friendlyId="AO_RESTTESTTOOLCACHECONTROL"
+                name="addOn_RestTestToolCacheControl"
+                type=""/>
+      <Variable default="no-cache"
+                friendlyId="AO_RESTDESCRIPTORCACHECONTROL"
+                name="addOn_RestDescriptorCacheControl"
+                type=""/>
+      <Variable default="false" name="addOn_Timer_Switch" type="boolean"/>
+      <Variable default="true"
+                friendlyId="AO_SOAP_ALLOWTRACING"
+                name="addOn_SOAP_AllowTracing"
+                type=""/>
+      <Variable default="50"
+                friendlyId="AO_SOAP_MAXIMUMCONNECTIONS"
+                name="addOn_SEI_HTTP_Service_MaximumConnections"
+                type=""/>
+      <Variable default="true"
+                friendlyId="AO_SOAP_RESOLVEHOSTNAMES"
+                name="addOn_SEI_HTTP_Service_ResolveHostnames"
+                type=""/>
+      <Variable default="54411"
+                friendlyId="AO_SOAP_E2ETESTSERVICE_PORT"
+                name="addOn_SEI_HTTP_Service_E2ETestService_Port"
+                type="integer"/>
+      <Variable default="54411"
+                name="addOn_service_ActiveMQ-5.15.9_ActiveMQ-5.15.9_shadow_port"
+                type="integer"/>
+      <Variable default="14411"
+                friendlyId="AO_SOAP_SIMPLEWORKFLOWSERVICE_PORT"
+                name="addOn_SEI_HTTP_Service_SimpleWorkflowService_Port"
+                type="integer"/>
+      <Variable default="54411"
+                friendlyId="AO_SSRV_TIMERSERVICE_PORT"
+                name="addOn_service_TimerService_TimerService_shadow_port"
+                type="integer"/>
+      <Variable default="true"
+                friendlyId="AO_E2ETESTSERVICE_TESTDATAGENERATOR_ENABLED"
+                name="addOn_E2ETestService.TestDataGenerator_Enabled"
+                type=""/>
+      <Variable default="/E2ETestService/TestDataGenerator"
+                name="addOn_E2ETestService.TestDataGenerator_URI"
+                type=""/>
+      <Variable default="true"
+                name="addOn_ActiveMQ-5.15.9.StepDoneListener_Enabled"
+                type=""/>
+      <Variable default="/ActiveMQ-5/15/9/StepDoneListener"
+                name="addOn_ActiveMQ-5.15.9.StepDoneListener_URI"
+                type=""/>
+      <Variable default="true"
+                friendlyId="AO_SIMPLEWORKFLOWSERVICE_SIMPLEWORKFLOWPORT_ENABLED"
+                name="addOn_SimpleWorkflowService.SimpleWorkflowPort_Enabled"
+                type=""/>
+      <Variable default="/SimpleWorkflowService/SimpleWorkflowPort"
+                name="addOn_SimpleWorkflowService.SimpleWorkflowPort_URI"
+                type=""/>
+      <Variable default="None"
+                name="addOn_SimpleWorkflowService.SimpleWorkflowPort_AuthMode"
+                type=""/>
+      <Variable default="true"
+                friendlyId="AO_TIMERSERVICE_NEWPROCESSCREATION_ENABLED"
+                name="addOn_TimerService.NewProcessCreation_Enabled"
+                type=""/>
+      <Variable default="/TimerService/NewProcessCreation"
+                name="addOn_TimerService.NewProcessCreation_URI"
+                type=""/>
+      <Variable default="${server_hostname}"
+                name="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.E2ETestService"
+                type=""/>
+      <Variable default="${server_hostname}"
+                name="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.ActiveMQ-5.15.9"
+                type=""/>
+      <Variable default="${server_hostname}"
+                name="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.SimpleWorkflowService"
+                type=""/>
+      <Variable default="${server_hostname}"
+                name="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.TimerService"
+                type=""/>
+      <Variable default="NEVER"
+                friendlyId="AO_SETTINGS_FIELDPADDING"
+                name="addOn_Settings_FieldPadding"
+                type=""/>
+      <Variable default="10"
+                friendlyId="AO_SETTINGS_DEFAULTCONNECTIONPOOLSIZE"
+                name="addOn_Settings_DefaultConnectionPoolSize"
+                type=""/>
+      <Variable default="1"
+                friendlyId="AO_SETTINGS_SERVERWORKERTHREADS"
+                name="addOn_Settings_ServerWorkerThreads"
+                type=""/>
+   </Variables>
+   <Display>
+      <Category label="Add-Ons">
+         <Section label="SOAP HTTP UI Server">
+            <Override label="libUnimo (Lib): Library Cache Control: value: "
+                      variable="addOn_libUnimo__UILibraryPath_UILibraryCacheControl"/>
+            <Override label="Library Cache Control: value: "
+                      variable="addOn_UILibraryPath_UILibraryCacheControl"/>
+         </Section>
+         <Section label="Dump Configuration">
+            <Override label="Dump Not Caught Errors: enabled: "
+                      variable="addOn_core.dump.not-catched-errors"/>
+            <Override label="Dump Caught Errors: enabled: "
+                      variable="addOn_core.dump.not-catched-errors_core.dump.catched-errors"/>
+            <Override label="Caught Error Domain (MY_DOMAIN|*): "
+                      variable="addOn_core.dump.not-catched-errors_core.dump.catched-errors_core.dump.catched-errors.domain"/>
+            <Override label="Caught Error Code (MY_CODE|*): "
+                      variable="addOn_core.dump.not-catched-errors_core.dump.catched-errors_core.dump.catched-errors.code"/>
+         </Section>
+         <Section label="Java Adapter Services">
+            <Override label="VirtualMachine: ClassPath: "
+                      variable="ALIAS_VirtualMachine_ClassPath"/>
+            <Override label="VirtualMachine: Options: Option: "
+                      variable="ALIAS_VirtualMachine_Options_Option1"/>
+            <Override label="VirtualMachine: Options: Option: "
+                      variable="ALIAS_VirtualMachine_Options_Option2"/>
+            <Override label="VirtualMachine: Options: Option: "
+                      variable="ALIAS_VirtualMachine_Options_Option3"/>
+            <Override label="VirtualMachine: ParallelOperations: "
+                      variable="ALIAS_VirtualMachine_ParallelOperations"/>
+            <Override label="StepOneTodoAlias: JMSConnection: name: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_name"/>
+            <Override label="StepOneTodoAlias: JMSConnection: host: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_host"/>
+            <Override label="StepOneTodoAlias: JMSConnection: port: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_port"/>
+            <Override label="StepOneTodoAlias: JMSConnection: protocol: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_protocol"/>
+            <Override label="StepOneTodoAlias: JMSConnection: acknowledgeMode: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_acknowledgeMode"/>
+            <Override label="StepOneTodoAlias: JMSConnection: timeToLive: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_timeToLive"/>
+            <Override label="StepOneTodoAlias: JMSConnection: selector: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_selector"/>
+            <Override label="StepOneTodoAlias: JMSConnection: Authentication: user: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_Authentication_user"/>
+            <Override label="StepOneTodoAlias: JMSConnection: Authentication: password: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_Authentication_password"/>
+            <Override label="StepOneTodoAlias: JMSConnection: Properties: Property: name: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_Properties_Property_name"/>
+            <Override label="StepOneTodoAlias: JMSConnection: Properties: Property: value: "
+                      variable="ALIAS_StepOneTodoAlias_JMSConnection_Properties_Property_value"/>
+            <Override label="StepOneTodoAlias: JMSDestination: name: "
+                      variable="ALIAS_StepOneTodoAlias_JMSDestination_name"/>
+            <Override label="StepDoneListener_ListenerPool: ListenerPool: maxTotal: "
+                      variable="ALIAS_StepDoneListener_ListenerPool_ListenerPool_maxTotal"/>
+            <Override label="StepDoneListener_ListenerPool: ListenerPool: minIdle: "
+                      variable="ALIAS_StepDoneListener_ListenerPool_ListenerPool_minIdle"/>
+            <Override label="StepDoneListener_ListenerPool: ListenerPool: minEvictableIdleTimeMillis: "
+                      variable="ALIAS_StepDoneListener_ListenerPool_ListenerPool_minEvictableIdleTimeMillis"/>
+            <Override label="StepDoneListener_ListenerPool: ListenerPool: timeBetweenEvictionRunsMillis: "
+                      variable="ALIAS_StepDoneListener_ListenerPool_ListenerPool_timeBetweenEvictionRunsMillis"/>
+            <Override label="StepDoneListener_ListenerPool: ListenerPool: numTestsPerEvictionRun: "
+                      variable="ALIAS_StepDoneListener_ListenerPool_ListenerPool_numTestsPerEvictionRun"/>
+            <Override label="ActiveMQ-5.15.9_ContextFactory: JMSContextFactory: name: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_name"/>
+            <Override label="ActiveMQ-5.15.9_ContextFactory: JMSContextFactory: connectionFactoryName: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_connectionFactoryName"/>
+            <Override label="ActiveMQ-5.15.9_ContextFactory: JMSContextFactory: initialContextFactory: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ContextFactory_JMSContextFactory_initialContextFactory"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: maxTotal: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxTotal"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: minIdle: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_minIdle"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: maxIdle: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxIdle"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: minEvictableIdleTimeMillis: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_minEvictableIdleTimeMillis"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: numTestsPerEvictionRun: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_numTestsPerEvictionRun"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: timeBetweenEvictionRunsMillis: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_timeBetweenEvictionRunsMillis"/>
+            <Override label="ActiveMQ-5.15.9_ConnectionPool: ConnectionPool: maxWaitSec: "
+                      variable="ALIAS_ActiveMQ-5.15.9_ConnectionPool_ConnectionPool_maxWaitSec"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: maxTotal: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxTotal"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: minIdle: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_minIdle"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: maxIdle: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxIdle"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: minEvictableIdleTimeMillis: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_minEvictableIdleTimeMillis"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: numTestsPerEvictionRun: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_numTestsPerEvictionRun"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: timeBetweenEvictionRunsMillis: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_timeBetweenEvictionRunsMillis"/>
+            <Override label="ActiveMQ-5.15.9_SessionPool: SessionPool: maxWaitSec: "
+                      variable="ALIAS_ActiveMQ-5.15.9_SessionPool_SessionPool_maxWaitSec"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: name: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_name"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: host: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_host"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: port: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_port"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: protocol: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_protocol"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: acknowledgeMode: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_acknowledgeMode"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: timeToLive: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_timeToLive"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: selector: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_selector"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: Authentication: user: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_Authentication_user"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: Authentication: password: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_Authentication_password"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: Properties: Property: name: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_Properties_Property_name"/>
+            <Override label="StepTwoTodoAlias: JMSConnection: Properties: Property: value: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSConnection_Properties_Property_value"/>
+            <Override label="StepTwoTodoAlias: JMSDestination: name: "
+                      variable="ALIAS_StepTwoTodoAlias_JMSDestination_name"/>
+            <Override label="StepDoneAlias: JMSConnection: name: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_name"/>
+            <Override label="StepDoneAlias: JMSConnection: host: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_host"/>
+            <Override label="StepDoneAlias: JMSConnection: port: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_port"/>
+            <Override label="StepDoneAlias: JMSConnection: protocol: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_protocol"/>
+            <Override label="StepDoneAlias: JMSConnection: acknowledgeMode: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_acknowledgeMode"/>
+            <Override label="StepDoneAlias: JMSConnection: timeToLive: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_timeToLive"/>
+            <Override label="StepDoneAlias: JMSConnection: selector: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_selector"/>
+            <Override label="StepDoneAlias: JMSConnection: Authentication: user: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_Authentication_user"/>
+            <Override label="StepDoneAlias: JMSConnection: Authentication: password: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_Authentication_password"/>
+            <Override label="StepDoneAlias: JMSConnection: Properties: Property: name: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_Properties_Property_name"/>
+            <Override label="StepDoneAlias: JMSConnection: Properties: Property: value: "
+                      variable="ALIAS_StepDoneAlias_JMSConnection_Properties_Property_value"/>
+            <Override label="StepDoneAlias: JMSDestination: name: "
+                      variable="ALIAS_StepDoneAlias_JMSDestination_name"/>
+         </Section>
+         <Section label="Persistent State">
+            <Override label="Persistent State: Database: "
+                      variable="ALIAS_Persistent State_Database"/>
+            <Override label="Persistent State: WorkerLimit: "
+                      variable="ALIAS_Persistent State_WorkerLimit"/>
+            <Override label="Persistent State: Owner: "
+                      variable="ALIAS_Persistent State_Owner"/>
+         </Section>
+         <Section label="SQL Adapter Connection">
+            <Override label="PStateDB: DB Type: " variable="addOn_PStateDB_DBType"/>
+            <Override label="PStateDB: DB Name: " variable="addOn_PStateDB_DBName"/>
+            <Override label="PStateDB: Unicode Mode (Platform default | Unicode | non-Unicode): "
+                      variable="addOn_PStateDB_UnicodeMode"/>
+            <Override label="PStateDB: Connection Pooling (true | false): "
+                      variable="addOn_PStateDB_ConnectionPooling"/>
+            <Override label="PStateDB: Max Connection Reuse: "
+                      variable="addOn_PStateDB_MaxConnectionReuse"/>
+            <Override label="PStateDB: Max Connection Age (minutes): "
+                      variable="addOn_PStateDB_MaxConnectionAge"/>
+            <Override label="PStateDB: Max Connection Idle Time (minutes): "
+                      variable="addOn_PStateDB_MaxConnectionIdleTime"/>
+         </Section>
+         <Section label="SQL Adapter Authorization">
+            <Override label="PStateDB: DBUser: "
+                      variable="addOn_SQLAuthorization_PStateDB_DBUser"/>
+            <Override label="PStateDB: DBPassword: "
+                      variable="addOn_SQLAuthorization_PStateDB_DBPassword"/>
+         </Section>
+         <Section label="Timer / Event Observer Service">
+            <Override label="NewProcessCreation: FirstOccurrence: "
+                      variable="ALIAS_NewProcessCreation_FirstOccurrence"/>
+            <Override label="NewProcessCreation: RepeatInterval: "
+                      variable="ALIAS_NewProcessCreation_RepeatInterval"/>
+            <Override label="NewProcessCreation: Occurrences: "
+                      variable="ALIAS_NewProcessCreation_Occurrences"/>
+            <Override label="NewProcessCreation: ParallelEvents: "
+                      variable="ALIAS_NewProcessCreation_ParallelEvents"/>
+            <Override label="NewProcessCreation: QueuedEvents: "
+                      variable="ALIAS_NewProcessCreation_QueuedEvents"/>
+            <Override label="Switched Off (true/false)" variable="addOn_Timer_Switch"/>
+         </Section>
+         <Section label="Flat File Parser/Composer">
+            <Override label="50_random_ip_addresses: Trace: "
+                      variable="addOn_FlatFileAddOn_50_random_ip_addresses_Trace"/>
+            <Override label="50_random_ip_addresses: FileName: "
+                      variable="addOn_FlatFileAddOn_50_random_ip_addresses_FileName"/>
+            <Override label="50_random_ip_addresses: Encoding: "
+                      variable="addOn_FlatFileAddOn_50_random_ip_addresses_Encoding"/>
+            <Override label="50_random_names: Trace: "
+                      variable="addOn_FlatFileAddOn_50_random_names_Trace"/>
+            <Override label="50_random_names: FileName: "
+                      variable="addOn_FlatFileAddOn_50_random_names_FileName"/>
+            <Override label="50_random_names: Encoding: "
+                      variable="addOn_FlatFileAddOn_50_random_names_Encoding"/>
+         </Section>
+         <Section label="REST Service Base">
+            <Override label="xUMLControllerService: MaximumConnections: "
+                      variable="addOn_Services_Service_xUMLControllerService_MaximumConnections"/>
+            <Override label="xUMLControllerService: ResolveHostnames: "
+                      variable="addOn_Services_Service_xUMLControllerService_ResolveHostnames"/>
+            <Override label="xUMLControllerService: Port: "
+                      variable="addOn_Services_Service_xUMLControllerService_Port"/>
+            <Override label="xUMLControllerService: JSONComposerOptions: keepNulls"
+                      variable="addOn_Services_Service_xUMLControllerService_JSONComposerOptions_keepNulls"/>
+            <Override label="xUMLControllerService: JSONComposerOptions: compact"
+                      variable="addOn_Services_Service_xUMLControllerService_JSONComposerOptions_compact"/>
+         </Section>
+         <Section label="REST HTTP Server">
+            <Override label="Test Tool: Cache Control: value: "
+                      variable="addOn_RestTestToolCacheControl"/>
+            <Override label="Descriptor: Cache Control: value: "
+                      variable="addOn_RestDescriptorCacheControl"/>
+         </Section>
+         <Section label="SOAP HTTP Server">
+            <Override label="Allow Tracing (true/false): " variable="addOn_SOAP_AllowTracing"/>
+            <Override label="MaximumConnections: "
+                      variable="addOn_SEI_HTTP_Service_MaximumConnections"/>
+            <Override label="ResolveHostnames: "
+                      variable="addOn_SEI_HTTP_Service_ResolveHostnames"/>
+            <Override label="E2ETestServicePort: "
+                      variable="addOn_SEI_HTTP_Service_E2ETestService_Port"/>
+            <Override label="ActiveMQ-5.15.9Port: "
+                      variable="addOn_service_ActiveMQ-5.15.9_ActiveMQ-5.15.9_shadow_port"/>
+            <Override label="SimpleWorkflowServicePort: "
+                      variable="addOn_SEI_HTTP_Service_SimpleWorkflowService_Port"/>
+            <Override label="TimerServicePort: "
+                      variable="addOn_service_TimerService_TimerService_shadow_port"/>
+         </Section>
+         <Section label="SOAP HTTP Service Request">
+            <Override label="E2ETestService: TestDataGenerator: enabled: "
+                      variable="addOn_E2ETestService.TestDataGenerator_Enabled"/>
+            <Override label="E2ETestService: TestDataGenerator: URI: "
+                      variable="addOn_E2ETestService.TestDataGenerator_URI"/>
+            <Override label="ActiveMQ-5.15.9: StepDoneListener: enabled: "
+                      variable="addOn_ActiveMQ-5.15.9.StepDoneListener_Enabled"/>
+            <Override label="ActiveMQ-5.15.9: StepDoneListener: URI: "
+                      variable="addOn_ActiveMQ-5.15.9.StepDoneListener_URI"/>
+            <Override label="SimpleWorkflowService: SimpleWorkflowPort: enabled: "
+                      variable="addOn_SimpleWorkflowService.SimpleWorkflowPort_Enabled"/>
+            <Override label="SimpleWorkflowService: SimpleWorkflowPort: URI: "
+                      variable="addOn_SimpleWorkflowService.SimpleWorkflowPort_URI"/>
+            <Override label="SimpleWorkflowService: SimpleWorkflowPort: Authentication Mode: "
+                      variable="addOn_SimpleWorkflowService.SimpleWorkflowPort_AuthMode"/>
+            <Override label="TimerService: NewProcessCreation: enabled: "
+                      variable="addOn_TimerService.NewProcessCreation_Enabled"/>
+            <Override label="TimerService: NewProcessCreation: URI: "
+                      variable="addOn_TimerService.NewProcessCreation_URI"/>
+         </Section>
+         <Section label="WSDL E2ETestService">
+            <Override label="WSDL: E2ETestService host: "
+                      variable="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.E2ETestService"/>
+         </Section>
+         <Section label="WSDL ActiveMQ-5.15.9">
+            <Override label="WSDL: ActiveMQ-5.15.9 host: "
+                      variable="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.ActiveMQ-5.15.9"/>
+         </Section>
+         <Section label="WSDL SimpleWorkflowService">
+            <Override label="WSDL: SimpleWorkflowService host: "
+                      variable="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.SimpleWorkflowService"/>
+         </Section>
+         <Section label="WSDL TimerService">
+            <Override label="WSDL: TimerService host: "
+                      variable="wsdl_host_urn:Component_View.Composites.SimpleWorkflow.TimerService"/>
+         </Section>
+         <Section label="SAP Global">
+            <Override label="FieldPadding: " variable="addOn_Settings_FieldPadding"/>
+            <Override label="DefaultConnectionPoolSize: "
+                      variable="addOn_Settings_DefaultConnectionPoolSize"/>
+            <Override label="ServerWorkerThreads: "
+                      variable="addOn_Settings_ServerWorkerThreads"/>
+         </Section>
+      </Category>
+      <Category label="Global Settings">
+         <Section label="Settings / Deployment Macros">
+            <Override label="getCompositeName: " variable="global_getCompositeName"/>
+            <Override label="UnimoSettings::workflowProcessId: "
+                      variable="global_UnimoSettings::workflowProcessId"/>
+         </Section>
+      </Category>
+   </Display>
+</Substitutions>

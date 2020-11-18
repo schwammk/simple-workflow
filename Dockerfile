@@ -8,7 +8,7 @@ RUN chown bridge:bridge /service_src
 
 COPY --chown=bridge:bridge libs service_src/libs
 COPY --chown=bridge:bridge uml service_src/uml
-COPY --chown=bridge:bridge logging.json $INSTANCES_HOME/logging.json
+COPY --chown=bridge:bridge loggerConfig.json $INSTANCES_HOME/logging.json
 ADD --chown=bridge:bridge datafiles/* /opt/bridge_data/resource/
 
 ARG SERVICE
